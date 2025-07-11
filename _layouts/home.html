@@ -1,0 +1,137 @@
+---
+layout: default
+bodyClass: "page-home"
+---
+
+<!-- Hero Section -->
+<div class="intro" id="home">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        {{ content }}
+        {% if page.show_call_box %}
+          {% include call.html show_button=true %}
+        {% endif %}
+      </div>
+      {% if page.intro_image %}
+      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Features Section -->
+{% if site.data.features %}
+<div class="strip strip-grey" id="features">
+  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-center">
+      {% for feature in site.data.features %}
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="feature">
+          {% if feature.image %}
+          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
+          {% endif %}
+          <h2 class="feature-title">{{ feature.title }}</h2>
+          <div class="feature-content">{{ feature.description }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- About Section -->
+<div class="strip strip-banner" id="about">
+  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6">
+        <div class="banner-content">
+          <h1 class="mb-4">The No-CRM CRM</h1>
+          {% assign about_content = site.pages | where: "layout", "about-no-crm-crm" | first %}
+          {% if about_content %}
+            {{ about_content.content | markdownify }}
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div >
+          <img src="/images/illustrations/data-processing.svg" alt="Data Processing" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Early Access Section -->
+<div class="strip strip-grey" id="contact">
+  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h1 class="text-center mb-5">Join the Whitelist</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 text-center">
+        <div class="service service-single">
+          <div class="content">
+            <p class="lead mb-4">Be the first to experience DuoHives' invisible CRM. Join our  whitelist and get free priority access when we launch.</p>
+            
+            <form
+              action="https://formspree.io/f/mvgrevww"
+              method="POST"
+              class="whitelist-form"
+            >
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div class="form-group mb-4">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input 
+                      type="email" 
+                      class="form-control" 
+                      id="email" 
+                      name="email" 
+                      placeholder="Enter your email address"
+                      required
+                    >
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="name" 
+                      name="name" 
+                      placeholder="Enter your full name"
+                      required
+                    >
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="company" class="form-label">Company (Optional)</label>
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="company" 
+                      name="company" 
+                      placeholder="Enter your company name"
+                    >
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="button-primary">
+                      Join the Whitelist
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

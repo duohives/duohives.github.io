@@ -1,0 +1,29 @@
+[
+  {
+    "title": "No setup. No stress.",
+    "description": "Connect your inbox and go. DuoHives works instantly — no forms, no pipelines, no “onboarding.” Just results.",
+    "image": {
+      "url": "images/features/noun_branding_1885335.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Leads don’t slip.",
+    "description": "We track every conversation and nudge you when it’s time to follow up, so nothing falls through the cracks.",
+    "image": {
+      "url": "images/features/noun_3d modeling_1885342.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "You do the talking.",
+    "description": "Our AI listens in the background — tracking leads, logging contacts, and spotting key moments.",
+    "image": {
+      "url": "images/features/noun_The Process_1885341.svg",
+      "width": 80,
+      "height": 80
+    }
+  }
+]
