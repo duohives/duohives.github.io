@@ -1,9 +1,0 @@
-main:
-  - name: "Whitelist"
-    url: "/#contact"
-    weight: 1
-
-footer:
-  - name: "Whitelist"
-    url: "/#contact"
-    weight: 1
