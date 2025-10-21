@@ -59,7 +59,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-    <a href="#setup" class="header-cta">Start for free</a>
+    <a href="#whitelist" class="header-cta">Join Waitlist</a>
 
     <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
   <span class="hamburger-box">
@@ -76,7 +76,7 @@
     <h1 id="the-invisible-crm" class="hero-heading">AI for perfect follow-ups</h1>
     <p class="hero-subheading">Built for sellers who need fast, shopper-centric decisions without the admin. DuoHives captures conversations, nudges next steps, and keeps every deal on track.</p>
     <div class="hero-actions">
-      <a href="#contact" class="btn btn-primary hero-primary">Start for free</a>
+      <a href="#whitelist" class="btn btn-primary hero-primary">Join Waitlist</a>
     </div>
   </div>
   <div class="container hero-preview-container">
@@ -256,7 +256,7 @@
             <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
           </summary>
           <div class="faq-content">
-            Yes. Start for free and invite a few teammates to validate value quickly. Paid plans unlock team‑wide automations and admin controls.
+            Yes. Join Waitlist and invite a few teammates to validate value quickly. Paid plans unlock team‑wide automations and admin controls.
           </div>
         </details>
         <!-- Item 6 -->
@@ -285,17 +285,25 @@
       </svg>
     </div>
     <div class="container footer-zen-container">
-      <!-- CTA band -->
-      <section class="cta-clarify" id="start">
+      <!-- CTA band: Whitelist form in existing card -->
+      <section class="cta-clarify" id="whitelist">
         <div class="cta-clarify-inner">
           <div class="cta-clarify-text">
-            <h2 class="cta-clarify-title">Ready for effortless follow‑ups?</h2>
-            <p class="cta-clarify-sub">Connect your email and calendar — DuoHives keeps every deal on track.</p>
+            <h2 class="cta-clarify-title">Join Waitlist</h2>
+            <p class="cta-clarify-sub">Be the first to experience DuoHives' invisible CRM. Join our whitelist and get free priority access when we launch.</p>
           </div>
-          <div class="cta-clarify-actions">
-            <a href="#setup" class="btn btn-primary cta-clarify-btn">Start for free</a>
-            <a href="#contact" class="cta-clarify-link">Contact us</a>
-          </div>
+          <form class="wl-form" action="https://formspree.io/f/your_form_id" method="POST">
+            <label class="wl-label" for="wl-email">Email Address</label>
+            <input id="wl-email" name="email" type="email" required placeholder="you@company.com" class="wl-input" />
+
+            <label class="wl-label" for="wl-name">Full Name</label>
+            <input id="wl-name" name="name" type="text" required placeholder="Your name" class="wl-input" />
+
+            <label class="wl-label" for="wl-company">Company (Optional)</label>
+            <input id="wl-company" name="company" type="text" placeholder="Enter your company name" class="wl-input" />
+
+            <button type="submit" class="btn btn-primary wl-btn">Join Waitlist</button>
+          </form>
         </div>
       </section>
 
@@ -328,7 +336,7 @@
         </div>
 
         <!-- Right: Email / contact -->
-        <div class="footer-email"><a href="mailto:hello@duohives.com">hello@duohives.com</a></div>
+        <div class="footer-email"><a href="mailto:support@duohives.com">support@duohives.com</a></div>
       </div>
 
       <div class="footer-zen-meta">
