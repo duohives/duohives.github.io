@@ -182,6 +182,7 @@ a:hover { color: var(--dh-secondary); text-decoration: underline; text-underline
   line-height: 1.8;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1.5rem; /* double the gap between heading and subheading */
 }
 .hero-actions {
   display: flex;
@@ -314,6 +315,9 @@ a:hover { color: var(--dh-secondary); text-decoration: underline; text-underline
 .founder-highlights li:before { content: '✓'; position: absolute; left: 0; color: var(--dh-dark, #1e2330); opacity: .7; }
 
 /* Zenline-style founder hero */
+.founder-zen {
+  background: linear-gradient(135deg, rgba(126,87,194,0.14), rgba(0,245,255,0.12));
+}
 .founder-zen .founder-hero {
   position: relative;
   border-radius: 28px;
