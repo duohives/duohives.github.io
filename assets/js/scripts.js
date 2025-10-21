@@ -7,3 +7,7 @@ menuTrigger.onclick = function() {
     menuTrigger.classList.toggle('is-active')
     body.classList.toggle('lock-scroll')
 }
+
+// (reverted) removed pipeline auto-cycling
+
+// (reverted) removed zenline optimize scroll-reveal

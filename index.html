@@ -84,7 +84,7 @@
       <div class="hero-preview-inner">
         <div class="hero-preview-shell">
           <div class="hero-preview-window">
-            <img src="images/placeholders/duohives-inbox-preview.png" alt="DuoHives inbox assistant preview" class="hero-preview-image">
+            <video src="images/placeholders/2.mp4" class="hero-preview-video" autoplay muted loop playsinline poster="images/placeholders/duohives-inbox-preview.png" aria-label="DuoHives inbox assistant preview"></video>
           </div>
         </div>
       </div>
@@ -127,6 +127,67 @@
     </div>
   </div>
   </div>
+
+  <!-- What is Immigram Platform? (replicated style) -->
+  <section class="ig-section" id="immigram-platform">
+    <div class="ig-container">
+      <h2 class="ig-heading">How It Works?</h2>
+
+      <div class="ig-grid">
+        <!-- Card 1 -->
+        <article class="ig-card ig-card--mint">
+          <div class="ig-card-inner">
+            <div class="ig-card-copy">
+              <div class="ig-badge">Connecting</div>
+              <h3 class="ig-title">Zero Setup</h3>
+              <p class="ig-desc">Connect with Gmail in seconds - Starts working instantly.</p>
+            </div>
+            <figure class="ig-figure">
+              <img src="images/placeholders/4.png" alt="Onboarding illustration" />
+            </figure>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="ig-card ig-card--lavender">
+          <div class="ig-card-inner">
+            <div class="ig-card-copy">
+              <div class="ig-badge">Dashboard</div>
+              <h3 class="ig-title">Zero Forgetting</h3>
+              <p class="ig-desc">Daily hotlist surfaces what matters - automatically.</p>
+            </div>
+            <figure class="ig-figure">
+              <img src="images/placeholders/5.png" alt="Automation illustration" onerror="this.onerror=null;this.src='images/placeholders/duohives-inbox-preview.png';" />
+            </figure>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="ig-card ig-card--sky">
+          <div class="ig-card-inner">
+            <div class="ig-card-copy">
+              <div class="ig-badge">Tracking</div>
+              <h3 class="ig-title">Zero Overhead</h3>
+              <p class="ig-desc">Turns inbox chaos into a self-updating pipeline.</p>
+            </div>
+            <figure class="ig-figure">
+              <img src="images/placeholders/6.png" alt="Experts illustration" />
+            </figure>
+          </div>
+        </article>
+      </div>
+
+      <div class="ig-cta">
+        <a href="#contact" class="ig-link">See more features</a>
+      </div>
+    </div>
+  </section>
+
+  
+
+  
+
+  
 
   <!-- Meet the Founder Section (Zenline-style) -->
   <div class="strip founder-zen" id="founder">
@@ -230,29 +291,32 @@
     </div>
   </div>
 
-  <!-- Start for Free CTA (Zenline-style) -->
-  <div class="strip cta-zen" id="start">
-    <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
-      <div class="cta-card">
-        <div class="cta-content">
-          <h1 class="cta-title">Start for free</h1>
-          <p class="cta-sub">Connect your email and calendar — DuoHives handles the rest in the background.</p>
-          <ul class="cta-pill-list">
-            <li>No SSO rollouts</li>
-            <li>No CRM migrations</li>
-            <li>No engineering tickets</li>
-          </ul>
-        </div>
-        <div class="cta-actions">
-          <a href="#setup" class="btn btn-primary btn-cta">Start for free</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bottom Section (Zenline-style footer) -->
+  <!-- Unified CTA + Footer (Clarify-style) -->
   <footer class="footer-zen" id="footer">
+    <div class="footer-noise-bg" aria-hidden="true">
+      <svg class="noise-svg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <filter id="clarify-noise">
+          <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="6" stitchTiles="stitch" />
+          <feColorMatrix type="saturate" values="0" />
+        </filter>
+        <rect width="100%" height="100%" filter="url(#clarify-noise)" />
+      </svg>
+    </div>
     <div class="container footer-zen-container">
+      <!-- CTA band -->
+      <section class="cta-clarify" id="start">
+        <div class="cta-clarify-inner">
+          <div class="cta-clarify-text">
+            <h2 class="cta-clarify-title">Ready for effortless follow‑ups?</h2>
+            <p class="cta-clarify-sub">Connect your email and calendar — DuoHives keeps every deal on track.</p>
+          </div>
+          <div class="cta-clarify-actions">
+            <a href="#setup" class="btn btn-primary cta-clarify-btn">Start for free</a>
+            <a href="#contact" class="cta-clarify-link">Contact us</a>
+          </div>
+        </div>
+      </section>
+
       <div class="footer-zen-grid">
         <!-- Left: Brand -->
         <div class="footer-brand">
@@ -262,25 +326,30 @@
           </a>
         </div>
 
-        <!-- Center: Nav -->
-        <nav class="footer-nav">
-          <a href="#setup">Setup</a>
-          <a href="#faq">FAQ</a>
-          <a href="#founder">About</a>
-          <a href="#start">Start</a>
-        </nav>
-
-        <!-- Right: Email -->
-        <div class="footer-email">
-          <a href="mailto:hello@duohives.com">hello@duohives.com</a>
+        <!-- Center: Link columns -->
+        <div class="footer-links">
+          <div class="footer-col">
+            <div class="footer-col-title">Product</div>
+            <a href="#setup">Setup</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Company</div>
+            <a href="#founder">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Legal</div>
+            <a href="#imprint">Imprint</a>
+            <a href="#privacy">Privacy</a>
+          </div>
         </div>
+
+        <!-- Right: Email / contact -->
+        <div class="footer-email"><a href="mailto:hello@duohives.com">hello@duohives.com</a></div>
       </div>
 
       <div class="footer-zen-meta">
-        <div class="iso-pill">
-          <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
-          <span>ISO 27001 Certified (in progress)</span>
-        </div>
         <div class="footer-legal">
           <a href="#imprint">Imprint</a>
           <a href="#privacy">Privacy Notice</a>
