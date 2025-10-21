@@ -535,6 +535,8 @@ a:hover { color: var(--dh-secondary); text-decoration: underline; text-underline
 .footer-email { text-align: right; font-size: clamp(1.1rem, 2.2vw, 1.8rem); font-weight: 700; }
 .footer-email a { color: rgba(255,255,255,0.95); text-decoration: none; }
 .footer-email a:hover { text-decoration: underline; }
+/* When footer email is below brand, align left */
+.footer-brand .footer-email { text-align: left; margin-top: .5rem; }
 
 .footer-zen-meta { margin-top: 2.2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .iso-pill { display: inline-flex; align-items: center; gap: .6rem; padding: .5rem .8rem; border-radius: 12px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.18); box-shadow: 0 6px 16px rgba(0,0,0,0.18); font-weight: 600; color: #fff; }
@@ -558,11 +560,11 @@ a:hover { color: var(--dh-secondary); text-decoration: underline; text-underline
 }
 .cta-clarify-title { margin: 0 0 .35rem; font-size: clamp(1.4rem, 3.2vw, 2rem); color: #fff; letter-spacing: -0.01em; }
 .cta-clarify-sub { margin: 0; color: rgba(255,255,255,0.8); }
-.wl-form { display: grid; gap: .6rem; align-items: start; justify-items: center; }
+.wl-form { display: grid; gap: 0; align-items: start; justify-items: center; }
 .wl-label { color: rgba(255,255,255,0.9); font-weight: 700; font-size: .9rem; }
-.wl-input { width: min(440px, 84vw); padding: .7rem .9rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.9); }
+.wl-input { width: min(360px, 70vw); padding: .7rem .9rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.9); }
 .wl-input::placeholder { color: #667085; }
-.wl-btn { min-width: 200px; }
+.wl-btn { width: auto; min-width: 200px; margin-top: 2.7rem; }
 .wl-input:focus { outline: none; border-color: var(--dh-secondary); box-shadow: 0 0 0 3px rgba(126,87,194,0.25); }
 .wl-btn { background: var(--dh-dark); border-color: transparent; }
 .wl-btn:hover { background: var(--dh-secondary); }
